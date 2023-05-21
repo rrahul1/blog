@@ -75,7 +75,7 @@
   width: 50%;
   margin: 0 auto;
   height: auto;
-  height: 65vh;
+  min-height: 85vh;
   margin-top: calc(100vh - 85vh - 20px);
   background: #fff;
   border-radius: 1em;
@@ -129,6 +129,6 @@
     gap: 2em;
   }
   .blogDetail {
-    width: 80%;
+    width: 75%;
   }
 }
