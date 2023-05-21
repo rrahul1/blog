@@ -1,5 +1,10 @@
-.blog{
+.blog {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  overflow: hidden;
 }
 
 .header {
@@ -16,14 +21,13 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 2em;
-  padding-block: 3em;
 }
 
 .blog-card {
   text-decoration: none;
   color: black;
   width: 30%;
-  height: 60vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +42,6 @@
 
 .blog-img {
   width: 100%;
-  object-fit: contain;
 }
 
 .blog-img > img {
@@ -105,13 +108,12 @@
 
 @media screen and (max-width: 1200px) {
   .blogs {
-    display:flex;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
-    gap: 2em;
   }
   .blog-card {
-    width: 75%;
+    width: 80%;
+    gap: 2em;
   }
   .blog-img img {
     height: 20em;
@@ -119,11 +121,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
   .blog-card {
     width: 80%;
     gap: 2em;
   }
   .blogDetail {
-    width: 100%;
+    width: 80%;
   }
 }
